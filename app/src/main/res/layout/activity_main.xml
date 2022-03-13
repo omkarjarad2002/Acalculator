@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/purple_700"
+        android:textColor="@color/whiteSmoke"
+        android:textSize="48sp"
+        android:maxLength="12"
+        android:padding="10dp"
+        android:gravity="right|center_vertical|bottom"
+        />
+
+    <!-- Row1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/purple_700"
+        >
+        <Button
+            android:id="@+id/tvButtonSeven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="7"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonEight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="8"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonNine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="9"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonDivide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="/"
+            android:onClick="onOperator"/>
+
+    </LinearLayout>
+
+    <!-- Row2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/purple_700"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/tvButtonFour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonFive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonSix"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonMultiply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="*"
+            android:onClick="onOperator"/>
+
+
+    </LinearLayout>
+
+    <!-- Row3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/purple_700"
+        >
+        <Button
+            android:id="@+id/tvButtonOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonTwo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonThree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonSubtract"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="-"
+            android:onClick="onOperator"/>
+
+    </LinearLayout>
+
+    <!-- Row4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/tvButtonDecimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="."
+            android:onClick="onDecimalClick"/>
+
+        <Button
+            android:id="@+id/tvButtonZero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/tvButtonClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CLR"
+            android:onClick="onClear"/>
+
+        <Button
+            android:id="@+id/tvButtonAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+            android:onClick="onOperator"/>
+
+    </LinearLayout>
+
+    <!-- Row5 Equal Sign -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/purple_700"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="="
+            android:onClick="onEqual"
+            />
+    </LinearLayout>
+
+</LinearLayout>
